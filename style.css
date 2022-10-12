@@ -1,0 +1,38 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 1rem "Veranda", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+body i {
+  position: absolute;
+  height: 200px;
+  background-image: linear-gradient(transparent, white);
+  border-bottom-left-radius: 99px;
+  border-bottom-right-radius: 99px;
+  animation: rainfall 5s linear infinite;
+}
+@keyframes rainfall {
+  from {
+    top: -200px;
+  }
+  to {
+    top: calc(100vh + 200px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
